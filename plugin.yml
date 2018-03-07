@@ -1,0 +1,5 @@
+name: ChallengeMe
+authors: [Extended_Clip, Staartvin]
+main: plugins.challengeme.ChallengeMe
+version: ${project.version}
+description: Challenge your players with a variety of tasks
