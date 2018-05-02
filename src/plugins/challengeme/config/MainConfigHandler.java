@@ -1,5 +1,8 @@
 package plugins.challengeme.config;
 
+/**
+ * This handler performs all communication between the main config and the plugin.
+ */
 public class MainConfigHandler extends plugins.challengeme.config.AbstractConfig {
 
     public MainConfigHandler(final plugins.challengeme.ChallengeMe instance) {
@@ -71,7 +74,6 @@ public class MainConfigHandler extends plugins.challengeme.config.AbstractConfig
     public java.util.List<String> getDisabledChallenges() {
         return this.getConfig().getStringList(DISABLED_CHALLENGES);
     }
-
 
 
 }
