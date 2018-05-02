@@ -1,8 +1,8 @@
 package plugins.challengeme.config;
 
-public class ConfigHandler extends plugins.challengeme.config.AbstractConfig {
+public class MainConfigHandler extends plugins.challengeme.config.AbstractConfig {
 
-    public ConfigHandler(final plugins.challengeme.ChallengeMe instance) {
+    public MainConfigHandler(final plugins.challengeme.ChallengeMe instance) {
         setPlugin(instance);
     }
 

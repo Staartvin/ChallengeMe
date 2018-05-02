@@ -4,11 +4,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class ChallengeMe extends JavaPlugin{
 
-    private plugins.challengeme.config.ConfigHandler configHandler;
+    private plugins.challengeme.config.MainConfigHandler configHandler;
 
     public void onEnable() {
 
-        setConfigHandler(new plugins.challengeme.config.ConfigHandler(this));
+        setConfigHandler(new plugins.challengeme.config.MainConfigHandler(this));
 
         // Load config files.
         loadFiles();
@@ -30,11 +30,11 @@ public class ChallengeMe extends JavaPlugin{
         this.getLogger().info("[DEBUG] " + debugMessage);
     }
 
-    public plugins.challengeme.config.ConfigHandler getConfigHandler() {
+    public plugins.challengeme.config.MainConfigHandler getConfigHandler() {
         return configHandler;
     }
 
-    public void setConfigHandler(plugins.challengeme.config.ConfigHandler configHandler) {
+    public void setConfigHandler(plugins.challengeme.config.MainConfigHandler configHandler) {
         this.configHandler = configHandler;
     }
 }
