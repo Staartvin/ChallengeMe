@@ -1,12 +1,14 @@
 package plugins.challengeme.config;
 
+import plugins.challengeme.ChallengeMe;
+
 /**
  * This handler performs all communication between the main config and the plugin.
  */
 public class MainConfigHandler extends plugins.challengeme.config.AbstractConfig {
 
-    public MainConfigHandler(final plugins.challengeme.ChallengeMe instance) {
-        setPlugin(instance);
+    public MainConfigHandler() {
+        super(ChallengeMe.getInstance());
     }
 
     private static String IS_CHALLENGE_INTERVAL_RANDOM = "challenges interval is random";

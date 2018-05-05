@@ -11,6 +11,10 @@ public abstract class AbstractConfig {
     private plugins.challengeme.config.YamlFile configFile;
     private ChallengeMe plugin;
 
+    public AbstractConfig(ChallengeMe instance) {
+        setPlugin(instance);
+    }
+
     /**
      * Create a new config file.
      */
